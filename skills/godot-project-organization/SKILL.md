@@ -7,7 +7,7 @@ description: Organizes Godot 4 projects with the "Function First" structure. Fol
 
 A folder structure for Godot 4 projects that groups files by in-game function, with naming that follows Godot's official conventions.
 
-**Never move or rename existing files unless the user explicitly asks to reorganize.** Otherwise, apply these rules only to new files. If the existing project doesn't follow this structure, mention it once and offer to run the audit script (see Workflows).
+**Never move or rename existing files, and never run the audit script, unless the user explicitly asks.** Otherwise, apply these rules only to new files. If the skill is invoked without a specific task, say in one line what it can help with (placing or naming a file, setting up folders, auditing, reorganizing) and ask what the user wants. Don't start an audit on your own.
 
 ## The two core rules
 
@@ -108,7 +108,7 @@ Use the decision guide above, name the file by the naming table, and create the 
 Create the top-level folders from the layout above (skip ones the project clearly won't need yet, such as `localization/`). Git doesn't track empty folders, so if the user wants the empty structure committed, add an empty `.gitkeep` file in each.
 
 ### Auditing an existing project
-Run the bundled audit script from the project root (the folder with `project.godot`):
+Only when the user asks for an audit. Run the bundled audit script from the project root (the folder with `project.godot`):
 
 ```bash
 python3 <skill-dir>/scripts/audit_project.py <path-to-godot-project>
