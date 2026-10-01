@@ -7,6 +7,8 @@ description: Organizes Godot 4 projects with the "Function First" structure. Fol
 
 A folder structure for Godot 4 projects that groups files by in-game function, with naming that follows Godot's official conventions.
 
+**Never move or rename existing files unless the user explicitly asks to reorganize.** Otherwise, apply these rules only to new files. If the existing project doesn't follow this structure, mention it once and offer to run the audit script (see Workflows).
+
 ## The two core rules
 
 1. **Group by in-game function first, by file type last.** Top-level folders say what things *are in the game* (`entities/`, `stages/`, `ui/`), never what kind of file they are (no `scripts/`, `scenes/`, `textures/`). File-type folders (`art/`, `sound/`, `data/`) only exist at the bottom, inside the folder of the one thing that uses them. This way every change to a thing, and every bug in it, has exactly one place to look.
