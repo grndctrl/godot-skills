@@ -7,13 +7,13 @@ Agent Skills for Godot 4 game development. Each skill is a plain `SKILL.md` fold
 Install a single skill with the [`skills`](https://www.npmjs.com/package/skills) CLI. It detects your coding agent and puts the skill in the right place:
 
 ```
-npx skills add https://github.com/YOUR-USERNAME/godot-skills --skill godot-project-organization
+npx skills add https://github.com/grndctrl/godot-skills --skill godot-project-organization
 ```
 
 Or install every skill in this repo:
 
 ```
-npx skills add YOUR-USERNAME/godot-skills
+npx skills add grndctrl/godot-skills
 ```
 
 Add `--list` to preview what's available, `-g` to install for all your projects, or `-a <agent>` to target a specific tool (`-a claude-code`, `-a cursor`, …).
@@ -21,21 +21,21 @@ Add `--list` to preview what's available, `-g` to install for all your projects,
 **Claude Code plugin (alternative):**
 
 ```
-claude plugin marketplace add YOUR-USERNAME/godot-skills
+claude plugin marketplace add grndctrl/godot-skills
 claude plugin install godot@godot-skills
 ```
 
-**Claude.ai / Claude Desktop:** download a skill's ZIP from the [releases](https://github.com/YOUR-USERNAME/godot-skills/releases) and upload it under **Customize → Skills → + → Create skill → Upload a skill**.
+**Claude.ai / Claude Desktop:** download a skill's ZIP from the [releases](https://github.com/grndctrl/godot-skills/releases) and upload it under **Customize → Skills → + → Create skill → Upload a skill**.
 
 ## Catalog
 
-| Skill | Scope |
-|---|---|
+| Skill                                                                      | Scope                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`godot-project-organization`](skills/godot-project-organization/SKILL.md) | "Function First" folder structure: group by in-game function (`entities/`, `stages/`, `ui/`), not file type. Godot's official naming conventions, `common/` purity rule, and a read-only project audit script. |
 
 ## godot-project-organization
 
-Instead of top-level `scripts/`, `scenes/` and `textures/` folders, a project is grouped by what things *are in the game*:
+Instead of top-level `scripts/`, `scenes/` and `textures/` folders, a project is grouped by what things _are in the game_:
 
 ```
 res://
@@ -113,16 +113,9 @@ docs/                      human-readable guides
 .claude-plugin/            Claude Code marketplace manifest (lists every skill)
 ```
 
-## Adding a skill
-
-1. Create `skills/godot-<topic>/SKILL.md`. The folder name and the `name` field in the frontmatter must match, and should start with `godot-` so they stay unique when installed next to skills from other repos.
-2. Add `"./skills/godot-<topic>"` to the `skills` list in `.claude-plugin/marketplace.json`.
-3. Add a row to the catalog above.
-4. Check it shows up with `npx skills add ./ --list`.
-
 ## Credits
 
-The Function First structure is based on DevDuck's video [How I Organize My 10k+ Line Godot Project!](https://www.youtube.com/watch?v=4az0VX9ApcA), describing the organization of his game *Dauphin*, adapted to Godot's official naming conventions.
+The Function First structure is based on DevDuck's video [How I Organize My 10k+ Line Godot Project!](https://www.youtube.com/watch?v=4az0VX9ApcA), describing the organization of his game _Dauphin_, adapted to Godot's official naming conventions.
 
 ## License
 
