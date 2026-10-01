@@ -1,0 +1,18 @@
+{
+  "name": "godot-skills",
+  "owner": { "name": "YOUR-NAME" },
+  "metadata": {
+    "description": "Agent Skills for Godot 4 game development."
+  },
+  "plugins": [
+    {
+      "name": "godot",
+      "source": "./",
+      "description": "All Godot skills in this repository.",
+      "strict": false,
+      "skills": [
+        "./skills/godot-project-organization"
+      ]
+    }
+  ]
+}

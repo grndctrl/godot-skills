@@ -5,7 +5,7 @@ description: Organizes Godot 4 projects with the "Function First" structure. Fol
 
 # Godot Project Organization: Function First
 
-A folder structure for Godot 4 projects, based on DevDuck's approach for his RPG *Dauphin*, with naming adapted to Godot's official conventions.
+A folder structure for Godot 4 projects that groups files by in-game function, with naming that follows Godot's official conventions.
 
 ## The two core rules
 
